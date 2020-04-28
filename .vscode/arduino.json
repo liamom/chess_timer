@@ -1,0 +1,9 @@
+{
+    "port": "COM3",
+    "board": "arduino:avr:nano",
+    "programmer": "Arduino as ISP",
+    "sketch": "main\\main.ino",
+    "output": "build",
+    "debugger": "jlink",
+    "configuration": "cpu=atmega328old"
+}
