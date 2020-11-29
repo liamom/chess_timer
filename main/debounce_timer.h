@@ -12,6 +12,13 @@ public:
   DebouncedValue(ARGS ...args):current_state_(forward<ARGS>(args)...) {
     
   }
+  
+  // to lazy to fix right now
+  DebouncedValue(T cpy):current_state_(cpy) {}
+
+  T get() {
+    return current_state_;
+  }
 
   template<class U_REF>
   bool set_value(U_REF &&new_state) {

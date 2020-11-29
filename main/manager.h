@@ -9,6 +9,10 @@ class Manager {
 public:
   using update_ptr = unique_ptr<IUpdate>;
 
+  ~Manager() {
+    
+  }
+
   // using f_ptr = void(*)();
   void addItem(IUpdate& ptr) {
     pin_listeners_.push_back(&ptr);
